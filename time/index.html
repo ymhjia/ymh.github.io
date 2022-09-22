@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>小清新个人博客主页 - 用照片记录时光（lmlblog.com）</title>
+<meta name="Keywords" content="个人主页" >
+<meta name="Description" content="个人主页" >
+<link rel="shortcut icon" href="images/lmlblog.png"/>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/tips.css" />
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.fancybox').fancybox();
+      $(".fancybox-effects-c").fancybox({
+        wrapCSS    : 'fancybox-custom',
+        closeClick : true,
+        openEffect : 'none',
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          overlay : {
+            css : {
+              'background' : 'rgba(238,238,238,0.85)'
+            }
+          }
+        }
+      });
+        $("#single_1").fancybox({
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
+    });
+  </script>
+<style type="text/css">
+.fancybox-custom .fancybox-skin {
+	box-shadow: 0 0 50px #222;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function($){
+  //$('#container1').hotSpot();
+ var _pop2 = $('#container2').hotSpot({
+    slideshow : false,
+    triggerBy : 'click',
+    autoHide : false
+  });
+  $('#image2').on('click',function(event){
+    _pop2.hideCurrentPop();
+  });
+
+  
+});
+</script>
+</head>
+<body style="cursor: url(images/cursor.gif),auto;">
+<header id="container2" style="background: #226039 url(images/bg-girl.jpg) center 0 scroll no-repeat;">
+  <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="pop7">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>一个人旅行，不理会繁杂的琐事，自由自在地，去体验一个城市，一段故事，留下一片欢笑。</p>
+      </div>
+    </div>
+  </div>
+  <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="pop6">
+    <div class="arrow"></div>
+    <div class="popover-inner">
+      <div class="popover-content">
+        <p>欠自己的旅行，终有一天，要还给自己。</p>
+      </div>
+    </div>
+  </div>
+  <img src="images/arrow1.png" alt="info" class="info-icon info-icon1" data-target="pop7"  /> <img src="images/arrow1.png" alt="info" class="info-icon info-icon2" data-target="pop6"  />
+  <div class="quotes">
+    <div class="text5">时光·记录</div>
+    <p>一生至少该有一次，为了某个人而忘了自己，不求有结果，不求同行，不求曾经拥有，甚至不求你爱我，只求在我最美的年华里，遇到你。(再美的回忆还是会淡忘，只能让相片定格那瞬间。)</p>
+    
+    </div>
+  </div>
+ 
+</header>
+<style type="text/css">
+body{
+  background: url(images/lmlblog.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+h1.t_nav span {
+    color: #FFF;
+}
+h1.t_nav {
+    border-bottom: #FFFFFF 1px solid;
+}
+  .post-like,.post-red {
+    top: -35px;
+    right: 10px;
+    margin-right: 20px;
+}
+</style>
+
+
+
+</footer>
+</body>
+<script type="text/javascript" src="js/tips.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+</html>
